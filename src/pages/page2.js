@@ -1,10 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const Test3 = () => {
+const page2 = () => {
     return (
         <div>
-            <h1>Prout</h1>
+               <h1>Prout</h1>
         <NavLink to="/" className='' >
         retour principal
         </NavLink>
@@ -12,4 +12,4 @@ const Test3 = () => {
     );
 };
 
-export default Test3;
+export default page2;

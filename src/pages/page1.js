@@ -8,6 +8,10 @@ const Test = () => {
         <NavLink to="/page2" className='' >
         Activités nexity 
         </NavLink>
+        <p>
+        <label for="imageFile">Upload a photo of yourself:</label>
+        <input type="file" id="imageFile" capture="user" accept="image/*"/>
+        </p>
         </div>
     );
 };
