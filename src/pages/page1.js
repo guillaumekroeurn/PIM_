@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import axios from 'axios';
 import { CameraFeed } from '../components/camera/camera.jsx';
 
+
 const uploadImage = async file => {
     const formData = new FormData();
     formData.append('file', file);
@@ -10,7 +11,7 @@ const uploadImage = async file => {
     // Connect to a seaweedfs instance
 };
 
-const Test = () => {
+const Page1 = () => {
     return (
         <div>
             <h1>Hello</h1>
@@ -27,4 +28,4 @@ const Test = () => {
     );
 };
 
-export default Test;
+export default Page1;
