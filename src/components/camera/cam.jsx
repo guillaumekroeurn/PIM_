@@ -1,5 +1,6 @@
 import React, {useRef, useEffect, useState} from 'react';
-import { NavigationType } from 'react-router-dom';
+import Scananimation from './Scananimation';
+
 
 
 function Cam() {
@@ -23,21 +24,42 @@ function Cam() {
             })
     }
 
+    const takePhoto = () => {
+        const width =414;
+        const height = width / (16/9);
+
+        let video = videoRef.current;
+        let photo = photoRef.current;
+
+        let ctx = photo.getContext('2d');
+        ctx.drawImage(video, 0, 0, width, height);
+        setHasPhoto(true);
+    }
+
+    const closePhoto = () => {
+        let photo = photoRef.current;
+        let ctx = photo.getContext('2d');
+
+        ctx.clearRect(0, 0, photo.width, photo.height);
+
+        setHasPhoto(false);
+    }
+
     useEffect(() => {
         getVideo();
     }, [videoRef])
-
 
     return (
         <div className='Test'>
             <div className='Cam'>
                 <video ref={videoRef}></video>
-                <button className='PHOTO'>[ +_+ ]</button> 
+                <button className='PHOTO' onClick={takePhoto} >[ +_+ ]</button> 
             </div>
-            <div className={'result'+ (hasPhoto ? 'hasPhoto' 
+            <Scananimation/>
+            <div className={'result '+ (hasPhoto ? 'hasPhoto' 
             : '')}>
                 <canvas ref={photoRef}></canvas>
-                <button>CLOSE!</button>
+                <button className='PHOTO' onClick={closePhoto}>CLOSE</button>
 
             </div>
         </div>

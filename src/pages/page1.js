@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
-import axios from 'axios';
+
 import { CameraFeed } from '../components/camera/camera.jsx';
 
 
