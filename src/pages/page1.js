@@ -1,19 +1,30 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const Test = () => {
+
+/*
+const uploadImage = async file => {
+    const formData = new FormData();
+    formData.append('file', file);
+
+    // Connect to a seaweedfs instance
+};*/
+
+const Page1 = () => {
     return (
         <div>
-            <h1>Hello</h1>
-        <NavLink to="/page2" className='' >
-        Activités nexity 
+            <h1>Home</h1>
+        <NavLink to="/page2"  >
+        page2 
         </NavLink>
-        <p>
-        <label for="imageFile">Upload a photo of yourself:</label>
-        <input type="file" id="imageFile" capture="user" accept="image/*"/>
-        </p>
+        <br/>
+            <NavLink to="/photo" >
+            [ +_+ ]
+            </NavLink>
+            
         </div>
+        
     );
 };
 
-export default Test;
+export default Page1;

@@ -1,15 +1,24 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Menu from '../components/menu/Menu';
 
-const page2 = () => {
+
+
+const Page2 = () => {
     return (
         <div>
-               <h1>Prout</h1>
-        <NavLink to="/" className='' >
-        retour principal
-        </NavLink>
+            <h1>Page2</h1>
+            <NavLink to="/" >
+            Home
+            </NavLink>
+            <br/>
+            <NavLink to="/photo" >
+            [ +_+ ]
+            </NavLink>
+            <Menu/>
+            
         </div>
     );
 };
 
-export default page2;
+export default Page2;
