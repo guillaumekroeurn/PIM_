@@ -1,5 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Auth from '../components/Auth/Auth';
+
 
 const Test = () => {
     return (
@@ -8,6 +10,8 @@ const Test = () => {
         <NavLink to="/page2" className='' >
         Activités nexity 
         </NavLink>
+        
+        <Auth />
         </div>
     );
 };
