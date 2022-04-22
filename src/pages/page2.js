@@ -1,16 +1,22 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Cam from '../components/camera/cam';
+import Menu from '../components/menu/Menu';
+
 
 
 const Page2 = () => {
     return (
         <div>
-            <h1>Prout</h1>
+            <h1>Page2</h1>
             <NavLink to="/" >
-            retour principal
+            Home
             </NavLink>
-            <Cam/>
+            <br/>
+            <NavLink to="/photo" >
+            [ +_+ ]
+            </NavLink>
+            <Menu/>
+            
         </div>
     );
 };

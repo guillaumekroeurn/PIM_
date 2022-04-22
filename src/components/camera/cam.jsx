@@ -1,4 +1,5 @@
 import React, {useRef, useEffect, useState} from 'react';
+import CircularIntegration from './loading';
 import Scananimation from './Scananimation';
 
 
@@ -53,12 +54,13 @@ function Cam() {
         <div className='Test'>
             <div className='Cam'>
                 <video ref={videoRef}></video>
-                <button className='PHOTO' onClick={takePhoto} >[ +_+ ]</button> 
+                <button className='PHOTOmenu' onClick={takePhoto} >[ +_+ ]</button> 
             </div>
             <Scananimation/>
             <div className={'result '+ (hasPhoto ? 'hasPhoto' 
             : '')}>
                 <canvas ref={photoRef}></canvas>
+                <CircularIntegration/>
                 <button className='PHOTO' onClick={closePhoto}>CLOSE</button>
 
             </div>
