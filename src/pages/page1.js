@@ -12,6 +12,12 @@ const Test = () => {
         </NavLink>
         
         <Auth />
+
+        <p>
+        <label for="imageFile">Upload a photo of yourself:</label>
+        <input type="file" id="imageFile" capture="user" accept="image/*"/>
+        </p>
+
         </div>
     );
 };
