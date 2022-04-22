@@ -3,23 +3,21 @@ import { NavLink } from 'react-router-dom';
 import Auth from '../components/Auth/Auth';
 
 
-const Test = () => {
+
+
+const Page1 = () => {
     return (
         <div>
-            <h1>Hello</h1>
-        <NavLink to="/page2" className='' >
-        Activités nexity 
+            <h1>Home</h1>
+        <NavLink to="/page2"  >
+        page2 
         </NavLink>
-        
-        <Auth />
-
-        <p>
-        <label for="imageFile">Upload a photo of yourself:</label>
-        <input type="file" id="imageFile" capture="user" accept="image/*"/>
-        </p>
-
+        <br/>
+            <NavLink to="/photo" > [ +_+ ] </NavLink>
+            <Auth />
         </div>
+        
     );
 };
 
-export default Test;
+export default Page1;
