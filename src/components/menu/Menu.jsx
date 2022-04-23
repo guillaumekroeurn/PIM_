@@ -1,32 +1,24 @@
-import * as React from 'react';
-import BottomNavigation from '@mui/material/BottomNavigation';
-import BottomNavigationAction from '@mui/material/BottomNavigationAction';
-import LightbulbOutlinedIcon from '@mui/icons-material/LightbulbOutlined';
-import LocalFloristOutlinedIcon from '@mui/icons-material/LocalFloristOutlined';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-export default function Menu() {
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
+const Menu = () => {
   return (
-      <BottomNavigation showLabels value={value} onChange={(event, newValue) => { setValue(newValue);}}>
-        <NavLink to="/mission" >
-          <BottomNavigationAction
-            label="Mission"
-            icon={<LightbulbOutlinedIcon/>}/>
+    <div className='menu'>
+      <NavLink to="/mission" className='leftright' >
+        <div className='led'></div>
+        <input className='icomenu' type='image' src='../image/light.png' alt='light' id='light'/>
+        <p className='nameico'>Mission</p>
+      </NavLink>
+      <NavLink to="/photo" >
+        <img  className="Gopht-btn" src="../image/photo.png"/>
         </NavLink>
-        <NavLink to="/photo" >
-          <img  className="Gopht-btn" src="../image/photo.png"/>
-        </NavLink>
-        <NavLink to="/collection" >
-          <BottomNavigationAction
-            label="Collection"
-            icon={<LocalFloristOutlinedIcon />}/>
-        </NavLink>
-    </BottomNavigation>
+      <NavLink to="/collection" className='leftright'>
+        <div className='led'></div>
+        <input className='icomenu' type='image' src='../image/plant.png' alt='plant' id='plant'/>
+        <p className='nameico'>Collection</p>
+      </NavLink>
+    </div>
   );
-}
+};
+
+export default Menu;

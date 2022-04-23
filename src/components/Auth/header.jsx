@@ -16,8 +16,8 @@ function Header() {
 
     return (
         <div className='compte'>
-            <h4>Hello</h4>
-           <p>{user?.email}</p>
+            <h4>Hello {user?.email}</h4>
+           {user?.email}
         <NavLink to="/">
         <button className='logout-btn' onClick={logout}>Déconexion</button>
         </NavLink>
