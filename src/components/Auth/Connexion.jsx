@@ -2,6 +2,7 @@ import React from 'react';
 import { onAuthStateChanged, signOut, signInWithEmailAndPassword } from "firebase/auth";
 import {auth} from '../../firebase-config';
 import { useState } from "react";
+import { NavLink } from 'react-router-dom';
 
 console.log(Connexion);
 function Connexion() {
@@ -34,28 +35,25 @@ function Connexion() {
 
     return (
       <div>
-       <div className="authPage">
-         <h3> Login</h3>
-         <div className="authPage">
-         <input className='authInput' placeholder="Email..." 
-         onChange={(event) => {
-          setLoginEmail(event.target.value);
-        }}/>
-        </div>
-         <div className="authPage">
-         <input className='authInput' placeholder="Password..." 
-         onChange={(event) => {
-          setLoginPassword(event.target.value);
-        }}/>
-        </div>
-        <div className="authPage"></div>
-         <button className='auth-btn' onClick={login}> Login</button>
+        <div className="authPage">
+          <h3>Connexion</h3>
+          <div className="authPage">
+            <input className='authInput' placeholder="Email..." 
+            onChange={(event) => {
+              setLoginEmail(event.target.value);
+            }}/>
+          </div>
+          <br/><br/>
+          <div className="authPage">
+            <input className='authInput' placeholder="Mot de passe..." 
+            onChange={(event) => {setLoginPassword(event.target.value);
+            }}/>
+          </div>
+          <br/><br/><br/><br/><br/>
+          <NavLink to="/connexion" className="authPage">
+          <button className='auth-btn' onClick={login}> Connexion</button>
+         </NavLink>
        </div>
-
-       <h4> User Logged In:</h4>
-       {user?.email}
-
-       <button className='auth-btn' onClick={logout}> Sign Out</button>
       </div>
     );
   };

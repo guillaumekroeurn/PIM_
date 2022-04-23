@@ -3,7 +3,16 @@
     padding: 0;
     border: none;
     font-weight: 400;
+    font-style: none;
+    text-decoration: none;
 }
+
+body{
+    width: 100vw;
+height: 1830px;
+border: solid 5px red;
+}
+
 
 /*typo prédéfini*/
 $font1: 'Rubik', sans-serif;;
@@ -16,5 +25,6 @@ $color2: #C9DECB;
 $color3: #666565;
 
 
-/*opacité prédéfini*/
-$alpha1: 1.0;
+
+
+

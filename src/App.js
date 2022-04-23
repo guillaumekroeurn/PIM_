@@ -1,17 +1,20 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Page1 from './pages/loginpage';
-import Page2 from './pages/page2';
-import Page3 from './pages/page3';
+import Startpage from './pages/__startpage';
+import Pageregister from './pages/_registerpage';
+import Pagelogin from './pages/_loginpage';
+import Pagehome from './pages/homepage';
 import Pagephoto from './pages/pagephoto';
+
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Page1/>} />
-        <Route path="/page2" element={<Page2/>} />
-        <Route path="/page3" element={<Page3/>} />
+        <Route path="/" element={<Startpage/>} />
+        <Route path="/inscription" element={<Pageregister/>} />
+        <Route path="/Connexion" element={<Pagelogin/>} />
+        <Route path="/mission" element={<Pagehome/>} />
         <Route path="/photo" element={<Pagephoto/>} />
       </Routes>
     </BrowserRouter>

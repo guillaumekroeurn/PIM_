@@ -10,7 +10,7 @@ const Pagephoto = () => {
             Home
             </NavLink>
             <br/>
-            <NavLink to="/page2" >
+            <NavLink to="/" >
             page2
             </NavLink>
             <Cam/>
