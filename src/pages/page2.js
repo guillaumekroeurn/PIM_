@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Connexion from '../components/Auth/Connexion';
 import Menu from '../components/menu/Menu';
 
 
@@ -15,7 +16,9 @@ const Page2 = () => {
             <NavLink to="/photo" >
             [ +_+ ]
             </NavLink>
+            <Connexion/>
             <Menu/>
+           
             
         </div>
     );
