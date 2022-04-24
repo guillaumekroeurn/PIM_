@@ -4,10 +4,10 @@ import { NavLink } from 'react-router-dom';
 const Pagestart = () => {
     return (
         <div className='authPage'>
-            <NavLink to="/"  >
+            <NavLink to="/" className='authPage' >
                 <img  src="../image/LogoInterGreen.png"></img>
             </NavLink>
-            <NavLink to="/"  >
+            <NavLink to="/" className='authPage'  >
                 <img  src="../image/Mascotte 8 1.png"></img>
             </NavLink>
             <NavLink to="/inscription" className='authPage' >

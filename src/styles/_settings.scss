@@ -1,11 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: none;
-    font-weight: 400;
-    font-style: none;
-    text-decoration: none;
-}
+
 
 body{
     width: 100vw;
@@ -23,6 +16,17 @@ $font1: 'Rubik', sans-serif;;
 $color1: #8EAA90;
 $color2: #C9DECB;
 $color3: #666565;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-weight: 400;
+    font-style: none;
+    text-decoration: none;
+    font-family: $font1;
+}
 
 
 

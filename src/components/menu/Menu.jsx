@@ -10,7 +10,7 @@ const Menu = () => {
         <p className='nameico'>Mission</p>
       </NavLink>
       <NavLink to="/photo" >
-        <img  className="Gopht-btn" src="../image/photo.png"/>
+        <img  className="Gopht-btn" src="../image/photo2.png"/>
         </NavLink>
       <NavLink to="/collection" className='leftright'>
         <div className='led'></div>

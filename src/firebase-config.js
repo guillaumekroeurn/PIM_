@@ -8,7 +8,10 @@ const firebaseConfig = {
   storageBucket: "pimm-c6805.appspot.com",
   messagingSenderId: "304591386555",
   appId: "1:304591386555:web:142bccd79ebab7de5ab69e"
+
 };
+
+
 
 const app = initializeApp(firebaseConfig);
 

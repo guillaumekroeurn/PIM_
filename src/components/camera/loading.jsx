@@ -2,9 +2,10 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import CircularProgress from '@mui/material/CircularProgress';
 import { green } from '@mui/material/colors';
-import Button from '@mui/material/Button';
+
 import Fab from '@mui/material/Fab';
 import CheckIcon from '@mui/icons-material/Check';
+import { NavLink } from 'react-router-dom';
 
 export default function CircularIntegration() {
   const [loading, setLoading] = React.useState(false);
@@ -46,9 +47,11 @@ export default function CircularIntegration() {
           sx={buttonSx}
           onClick={handleButtonClick}
         >
-          {success ? <CheckIcon /> : "Annalyse"}
+          {success ? <NavLink to="/description"> <CheckIcon />  
+          </NavLink> : "Scan"}
         </Fab>
         {loading && (
+           
           <CircularProgress
             size={68}
             sx={{
@@ -57,29 +60,6 @@ export default function CircularIntegration() {
               top: -6,
               left: -6,
               zIndex: 1,
-            }}
-          />
-        )}
-      </Box>
-      <Box sx={{ m: 1, position: 'relative' }}>
-        <Button
-          variant="contained"
-          sx={buttonSx}
-          disabled={loading}
-          onClick={handleButtonClick}
-        >
-          Annalyse
-        </Button>
-        {loading && (
-          <CircularProgress
-            size={24}
-            sx={{
-              color: green[500],
-              position: 'absolute',
-              top: '50%',
-              left: '50%',
-              marginTop: '-12px',
-              marginLeft: '-12px',
             }}
           />
         )}

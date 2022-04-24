@@ -13,7 +13,7 @@ function Cam() {
     const getVideo = () => {
         navigator.mediaDevices
             .getUserMedia({
-                video: { width: 1920, height:1080 }
+                video: { width: 1280, height:720 }
             })
             .then(stream =>{
                 let video = videoRef.current;
@@ -26,7 +26,7 @@ function Cam() {
     }
 
     const takePhoto = () => {
-        const width =414;
+        const width =298; /*modifiable poour la photo*/
         const height = width / (16/9);
 
         let video = videoRef.current;
@@ -54,15 +54,21 @@ function Cam() {
         <div className='Test'>
             <div className='Cam'>
                 <video ref={videoRef}></video>
-                <button className='PHOTOmenu' onClick={takePhoto} >[ +_+ ]</button> 
+                <div className='menuphoto'>
+                    <img className='btnphoto' onClick={takePhoto} src="../image/btnphoto.png"></img>
+                </div>
             </div>
             <Scananimation/>
             <div className={'result '+ (hasPhoto ? 'hasPhoto' 
             : '')}>
-                <canvas ref={photoRef}></canvas>
-                <CircularIntegration/>
                 <button className='PHOTO' onClick={closePhoto}>CLOSE</button>
-
+                <canvas ref={photoRef}></canvas>
+                <div className='footerscan'>
+                    <h1>Scan pour savoir c'est quelle plante !</h1>
+                    <div className='btnAnnalyse'>
+                        <CircularIntegration />
+                    </div>
+                </div>
             </div>
         </div>
     );
