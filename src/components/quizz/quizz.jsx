@@ -8,7 +8,7 @@ export default function Quizz() {
 			answerOptions: [
 				{ answerText: 'Printemps', isCorrect: true },
 				{ answerText: 'été', isCorrect: false },
-				{ answerText: 'Autonme', isCorrect: false },
+				{ answerText: 'Autonme', isCorrect: true },
 				{ answerText: 'Hiver', isCorrect: false },
 			],
 		},
