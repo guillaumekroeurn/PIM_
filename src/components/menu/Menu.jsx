@@ -12,7 +12,7 @@ const Menu = () => {
       <NavLink to="/photo" >
         <img  className="Gopht-btn" src="../image/photo2.png"/>
         </NavLink>
-      <NavLink to="/collection" className='leftright'>
+      <NavLink to="/plantes" className='leftright'>
         <div className='led'></div>
         <input className='icomenu' type='image' src='../image/plant.png' alt='plant' id='plant'/>
         <p className='nameico'>Collection</p>

@@ -4,9 +4,9 @@ import { NavLink } from 'react-router-dom';
 const Pageplante = () => {
     return (
         <div>
-            <h1>Aloé Vera</h1>
-            <NavLink to="/collection" >
-            <boutton> Suivant</boutton>
+            <img className='pageplantes'  src="../image/Pageplante.jpg"></img>
+            <NavLink className='suiv' to="/quizz" >
+            <button>Valider ma mission</button>
             </NavLink>
         </div>
     );

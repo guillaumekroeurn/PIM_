@@ -1,0 +1,21 @@
+{
+    "questionText": "Pendant quelles saisons doit-on planté l’aloe vera?",
+    "answerOptions": [
+        { 
+            "answerText": "Printemps",
+            "isCorrect": false 
+        },
+        { 
+            "answerText": "été",
+             "isCorrect": false 
+        },
+        { 
+            "answerText": "Autonme",
+             "isCorrect": true 
+        },
+        { 
+            "answerText": "Hiver",
+             "isCorrect": false 
+        }
+    ]
+}

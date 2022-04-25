@@ -1,0 +1,67 @@
+
+//------page non faites------------------
+
+.pagemission{
+margin-top: 50px;
+width: 100vw;
+}
+.pagecollection{
+    margin-top: 10%;
+    margin-bottom: 30%;
+    width: 100vw;
+}
+
+.pageplantes{
+    width: 100vw;
+    margin-bottom: -50px;
+
+}
+.suiv{
+    position: relative;
+    bottom: 80px;
+    left: 55%;
+
+    button{
+        font-size: 40px;
+        font-weight: 500;
+        color: white;
+        background-color: transparent;
+        
+    }
+}
+
+.azerty{
+padding-top: 15%;
+width: 100vw;
+}
+
+.btnswitchcollection{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 22.5%;
+    border: solid 3px $color1;
+    border-radius: 50px;
+
+    .link{
+        background-color: transparent;
+        margin: 2.5%;
+        padding: 17px 10%;
+        font-size: 40px;
+        border-radius: 35px;
+        display: flex;
+        justify-content: center;
+    }
+    button{
+        background-color: transparent;
+        color: $color3;
+        margin: 2.5%;
+        padding: 17px 10%;
+        font-size: 40px;
+    }
+    .active, .link:hover {
+        color: white;
+        background-color: $color1;
+    }
+}

@@ -46,7 +46,7 @@ function Register() {
                 </div>
                 <br/><br/><br/><br/><br/>
                
-                <NavLink to="/mission" className="authPage">
+                <NavLink to="/form" className="authPage">
                     <button className='auth-btn' onClick={register}> Create User</button>
                 </NavLink> 
             </div>
