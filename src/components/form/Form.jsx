@@ -29,19 +29,19 @@ function Form() {
             <form onSubmit={Envoyer}>
                 <div className='titreform'>
                     <p className='typecole'>Votre école</p>
-                    <input  className='secform' type="text" name="ecolename" placeholder="Ecole" id='ecole'/><br/><br/>
+                    <input  className='secform' type="text" name="ecolename" placeholder="Ecole..." id='ecole'/><br/><br/>
                 </div>
                 <div className='titreform'>
                     <p className='typecole'>Votre classe</p>
-                    <input  className='secform' type="text" name="classename" placeholder="Classe" id='classe'/><br/><br/>
+                    <input  className='secform' type="text" name="classename" placeholder="Classe..." id='classe'/><br/><br/>
                 </div>
                 <div className='titreform'>
                     <p className='typecole'>Votre team</p>
-                    <input  className='secform' type="team" name="teamname" placeholder="Team" id='team'/><br/><br/>
+                    <input  className='secform' type="team" name="teamname" placeholder="Team..." id='team'/><br/><br/>
                 </div>
                 <div className='titreform'>
                     <p className='typecole'>Vos élèves</p>
-                    <input  className='secform' type="text" name="Elèvename" placeholder="Elèves" id='Incident'/><br/>
+                    <input  className='secform' type="text" name="Elèvename" placeholder="Elèves..." id='Incident'/><br/>
                 </div>
                     <button className='boutonform' onClick={envoye} >Validez votre team</button>
             </form>

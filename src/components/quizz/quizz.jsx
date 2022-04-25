@@ -12,6 +12,15 @@ export default function Quizz() {
 				{ answerText: 'Hiver', isCorrect: false },
 			],
 		},
+		{
+			questionText: 'Quelle sont les danger de laloe vera',
+			answerOptions: [
+				{ answerText: 'Les parasites', isCorrect: true },
+				{ answerText: 'Les maladies', isCorrect: false },
+				{ answerText: 'La météo', isCorrect: true },
+				{ answerText: 'Humain', isCorrect: false },
+			],
+		},
 		
 	];
 
@@ -35,7 +44,7 @@ export default function Quizz() {
 		<div className='app'>
 			{showScore ? (
 				<div className='score-section'>
-					You scored {score} out of {questions.length}
+					Ton score est de {score} sur {questions.length}
 					<NavLink to="/description" className="authPage">
                    		 <button className='auth-btn2' >Réessayer</button>
 					</NavLink> 
